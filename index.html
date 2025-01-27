@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <title>Form</title>
+</head>
+
+<body>
+    <header class="bg-zinc-900 ">
+        <nav class="py-5 px-10">
+            <div class="nav-logo">
+                <div class="text-3xl font-bold text-white">Form</div>
+            </div>
+        </nav>
+    </header>
+    <main >
+
+        <section class="bg-white ">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                <div class=" text-gray-500 sm:text-lg ">
+                    <h2 class="mb-4 text-3xl tracking-tight font-bold text-gray-900 ">Models can send there data in
+                        below contact form and can submit there photos and videos by sharing the link of google drive
+                    </h2>
+                    <p class="mb-4 font-medium">Deliver great service experiences fast - without the complexity of
+                        traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy
+                        changes with ease.</p>
+
+                </div>
+            </div>
+        </section>
+        <form class="max-w-sm mx-auto pb-24 px-5"
+        action="https://formspree.io/f/meoeaqyz"
+  method="POST">
+            <div>
+                <label for="name" class="block mb-2 mt-5 text-md font-medium text-gray-900 ">Your Name</label>
+                <input type="name" id="email" name="name"
+                    class="bg-gray-50 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="name" required />
+            </div>
+            <label for="message" class="block mb-2 mt-5 text-MD font-medium text-gray-900 ">Your message</label>
+            <textarea id="message"  name="message" rows="4"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-500 focus:ring-blue-500 focus:border-blue-500 "
+                placeholder="Leave a comment..." required></textarea>
+            <label for="countries" class="block mb-2 mt-5 text-md font-medium text-gray-900 ">Select your
+                options</label>
+            <select id="countries"  name="category"
+                class="bg-gray-50 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+
+                <option>CMS SILVER</option>
+                <option>CMS GOLD</option>
+                <option>CMS DIAMOND</option>
+            </select>
+            <div class="my-5">
+                <label for="link" class="block mb-2 text-md font-medium text-gray-900 ">Google Drive Link</label>
+                <input type="text" name="link" id="email"
+                    class="bg-gray-50 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="paste your link here" required />
+            </div>
+
+            <button type="submit"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg cursor-pointer text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Submit</button>
+        </form>
+        
+    </main>
+    <div class="px-10">
+        <h2 class="mb-4 text-2xl tracking-tight font-bold text-center text-gray-900 ">Example how can you upload video with google drive
+        </h2>
+    </div>
+   <div class="pb-24 pt-12 px-10 flex justify-center ">
+    
+    <iframe class="h-62 w-96"  src="https://www.youtube.com/embed/r9jwGansp1E" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+   </div>
+</body>
+<footer class="bg-zinc-900 pb-56 mt-24">
+    <nav class="py-5 px-10">
+        <div class="nav-logo">
+            <div class="text-3xl font-bold text-white">Footer</div>
+        </div>
+    </nav>
+</footer>
+</html>
